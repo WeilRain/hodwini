@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .mytooltip {
+  position: relative;
+  z-index: 999
+  }
+  .mytooltip .tooltip-item {
+  
+  cursor: pointer;
+  
+  
+  }
+  .mytooltip .tooltip-content {
+  position: absolute;
+  width: 290px;
+  display: flex !important;
+  justify-content: center !important;
+  bottom: 100%;
+  background: none;
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
+  transition: all 1s ease;
+  }
+ 
+  .mytooltip .tooltip-content img {
+   width: 400px;
+   position: relative;
+   display: block;
+ 
+  }
+  
+  .mytooltip:hover .tooltip-content {
+  pointer-events: auto;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
+  transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
+  transition: all 0.7s ease;
+  }
+
+  @media screen and (max-width: 565px){
+    .tooltip-content{
+      width: 290px !important;
+      
+      
+     
+       
+     }
+    } 
+
+     @media screen and (max-width: 425px){
+      .tooltip-content{
+        
+       
+        
+       }
+      }
+      @media screen and (max-width: 375px){
+        .tooltip-content{
+      
+          
+         }
+        }
+
+        .sss{
+            display: flex;
+            justify-content: center;
+            margin-top: 700px;
+        }
+</style>
+<body>
+    
+
+    <div class="sss">
+       
+        
+        
+        
+        <p class="text-center">
+        <span class="mytooltip tooltip-effect-1">
+        <span class="tooltip-item">Hover me  to get tooltip with image and content</span>
+        <span class="tooltip-content clearfix">
+        <img src="DW-BG-T (1).svg">
+        <span class="tooltip-text"></span>
+        </span>
+        </span>
+       </p>
+      
+        
+        </div> 
+</body>
+</html>
