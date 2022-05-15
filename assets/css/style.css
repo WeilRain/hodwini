@@ -271,7 +271,7 @@ img {
   }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
   br{
     display: none !important;
   
@@ -291,12 +291,12 @@ img {
   }
   .t-3{
     float: none;
-    width:65% !important;
+    width:75% !important;
     margin: 0 auto;
   }
   .t-4{
     float: none;
-    width:60% !important;
+    width:75% !important;
     margin: 0 auto;
   }
 }
