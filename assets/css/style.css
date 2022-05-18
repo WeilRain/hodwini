@@ -245,10 +245,6 @@ img {
   width: 500px;
 }
 
-.text h1{
- font-weight: 600 !important;
-}
-
 .pt-2{
   font-size: 20px;
 }
@@ -419,7 +415,6 @@ img {
 .footer{
   margin-top: 50px;
   background-color: rgba(47, 49, 54, 0.534);
-  border-radius: 15px;
   height: 80px;
   color: #ffff;
 }
@@ -469,7 +464,9 @@ p{
   padding: 10px;
   flex: 50%;
   font-size: 19px;
+  cursor: pointer;
 }
+
 @media (max-width: 1000px) {
   .flex-container {
     flex-direction: column;
