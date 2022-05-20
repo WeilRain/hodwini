@@ -146,14 +146,14 @@ nav{
   margin: 0 auto;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1150px){
   .navbar {
   height: auto;
   }
 } 
 
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1150px) {
   .sm-icons .nav-item .nav-icon {
     padding-right: 1em;
   }
@@ -247,9 +247,10 @@ img {
 
 .pt-2{
   font-size: 24px;
+  margin-bottom: 50px !important;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1150px){
   .main-content .inner-content {
     flex-flow: column-reverse;
     text-align: center !important;
@@ -264,6 +265,12 @@ img {
     padding-top:0 !important;
     text-align: center !important;
     width: 100% !important;
+  }
+  .pt-2{
+    margin: 0 !important;
+  }
+  .navbar-expand-lg{
+   
   }
 }
 
@@ -296,7 +303,7 @@ img {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1150px){
   .t-1{
     float: none;
     margin: 0 auto;
@@ -467,7 +474,7 @@ p{
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
   .flex-container {
     flex-direction: column;
   }
