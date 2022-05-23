@@ -422,7 +422,7 @@ img {
 .footer{
   margin-top: 50px;
   background-color: rgba(47, 49, 54, 0.534);
-  height: 80px;
+  height: auto;
   color: #ffff;
 }
 .cent{
@@ -452,6 +452,7 @@ p{
 }
 
 .flex-item-left {
+  margin-top: 15px;
   padding: 10px;
   flex:25%;
   text-align: left;
@@ -459,6 +460,7 @@ p{
 }
 
 .flex-item-right {
+  margin-top: 15px;
   padding: 10px;
   flex: 25%;
   font-size: 19px;
@@ -467,7 +469,7 @@ p{
 }
 
 .flex-item-center {
-  margin-top: 30px;
+  margin-top: 25px;
   padding: 10px;
   flex: 50%;
   font-size: 19px;
