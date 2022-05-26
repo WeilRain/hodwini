@@ -165,7 +165,7 @@
   <div class="flex-container">
         <div class="flex-item-left">
           <p>Версия: 1.18.2</p>
-       <p id="rest">Loading</p>
+       <p id="rest">Загрузка...</p>
        </div>
      
       <div class="flex-item-center">
@@ -201,7 +201,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
 var url = "https://api.minetools.eu/ping/join.hodwini.fun";
-
+ 
 $.getJSON(url, function(r) {
     //data is the JSON string
  if(r.error){
@@ -209,13 +209,12 @@ $.getJSON(url, function(r) {
    return false;
  } 
 var pl = '';
- if(r.players.sample.length > 0 )
-  $('#rest').html('Онлайн: '+r.players.online+pl);
+ if(r.players.sample.length > 0 ){ pl = ''+r.players.sample[0].name;  } 
+  $('#rest').html('Players Online: '+r.players.online+pl);
  $('#favicon').attr('src', r.favicon);
     
 });
 
-  
 </script>
 <!-- script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
