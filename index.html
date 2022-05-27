@@ -209,8 +209,8 @@ $.getJSON(url, function(r) {
    return false;
  } 
 var pl = '';
- if(r.players.sample.length > 0 ){ pl = ''+r.players.sample[0].name;  } 
-  $('#rest').html('Players Online: '+r.players.online+pl);
+ if(r.players.sample.length > 0 ){} 
+  $('#rest').html('Онлайн: '+r.players.online+pl);
  $('#favicon').attr('src', r.favicon);
     
 });
